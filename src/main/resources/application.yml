@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: pro
+  datasource:
+    url: jdbc:mysql://${blog.mysql.ip}:${blog.mysql.port}/${blog.mysql.db}?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
+    username: ${blog.mysql.username}
+    password: ${blog.mysql.password}
+    driver-class-name: com.mysql.cj.jdbc.Driver
